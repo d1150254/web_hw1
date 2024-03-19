@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.ico"/>
+    <title>無法連線至網頁</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #e6ddfc;
+            margin: 0; /* 清除預設的邊距 */
+            padding: 0; /*清除預設的內距 */
+            box-sizing: border-box;
+            background-image: url('twitch.png'); /* 更改背景圖片的路徑 */
+            background-size: auto; /*調整圖片大小以填滿整個網頁*/
+            background-position: center; /*圖片居中*/
+            background-repeat: no-repeat; /*禁止圖片重複*/
+        }
+        html, body{
+            height: 100%;
+            margin: 0;
+        }
+        .block{
+            max-width: 600px; /* 設置內容容器的最大寬度 */
+            margin: 0px auto; /* 將內容置中 */
+            background-color: #a19cf1;
+            padding: 20px; /*block文字離邊界的距離*/
+            border-radius: 10px; /* 設block為圓角 */
+            text-align: center;
+        }
+        .wrapper {
+            min-height: 100%;
+        }
+        .content {
+            padding-bottom: 50px; /*隨footer高度需做調整*/
+        }
+        .footer {
+            height: 50px; /*設定footer本身高度*/
+            margin-top: -50px; /*隨footer高度需做調整*/ 
+            background-color: #a19cf1;
+            padding: 0px;
+            text-align: center;
+        }
+        .footer a{
+            display: inline-block;
+            margin: 10px;
+        }
+        .footer img{
+            width: 25px;
+            height: 25px;
+        }
+        h1{
+            color: #333;
+        }
+        p{  
+            color: #333; 
+        }
+        a{
+            color:rgb(196, 67, 67);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="block">
+                <h1>連線出現問題</h1>
+                <p>抱歉，目前無法連線至網站。</p>
+                <p>請嘗試刷新網頁。</p>
+                <p>如果問題持續存在，請<a href="https://twitter.com/TwitchSupport" target="_blank">點擊這裡</a>聯絡我們，我們將盡快排除問題</p>
+            </div>
+        </div> 
+    </div> 
+    <footer class="footer">
+        <a href="https://twitter.com/TwitchSupport" target="_blank"><img src="twittericon.jpg" alt="Twitter"></a>
+        <a href="https://www.facebook.com/TwitchTW" target="_blank"><img src="facebookicon.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/twitch/" target="_blank"><img src="instagramicon.png" alt="Instagram"></a>
+    </footer>
+</body>
+</html>
